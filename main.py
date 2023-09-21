@@ -1,6 +1,10 @@
-year=int(input("enter the year"))
-if(year%4==0)and(year%100!=0):
-   print(f" the given year{year} is leap year")
-else:
-   print(f"the given year{year} is not a leap year")
-  
+def get_indices(element, lst):
+    indices = []
+    for i in range(len(lst)):
+        if lst[i] == element:
+            indices.append(i)
+    return indices
+my_list = [3, 5, 2, 3, 8, 3, 1]
+element = 3
+indices = get_indices(element, my_list)
+print(indices)
